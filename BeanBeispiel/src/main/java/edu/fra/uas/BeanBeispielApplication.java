@@ -24,4 +24,15 @@ public class BeanBeispielApplication {
         return action;
     }
 
+    @Bean 
+CommandLineRunner init() { 
+CommandLineRunner action = new CommandLineRunner() { 
+@Override 
+public void run(String... args) throws Exception { 
+ System.out.println("Hello World"); 
+} 
+}; 
+return action; 
+}
+
 }
